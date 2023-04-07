@@ -9,6 +9,12 @@ public class LoginTest {
     @Test
     public void loginAsValidUser() {
         new LoginPage().open()
-                       .login();
+                       .loginAsValidUser();
+    }
+
+    @Test
+    public void loginWithInvalidPassword() {
+        new LoginPage().open()
+                       .loginWithInvalidPassword();
     }
 }
